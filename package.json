@@ -1,0 +1,15 @@
+{
+  "name": "mg2f",
+  "version": "0.0.1",
+  "description": "Google (chrome Ext) for crypting Facebook message, with Microsoft tech (TypeScript). Dev with MacBook. All the American's start are in :)",
+  "author": "Jérémy Fornarino",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-typings": "^0.1.5",
+    "load-grunt-tasks": "^3.5.2",
+    "typedoc": "^0.5.1"
+  }
+}

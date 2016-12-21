@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "mg2f",
+  "description": "Google (chrome Ext) for crypting Facebook message, with Microsoft tech (TypeScript). Dev with MacBook. All the American's start are in :)",
+  "version": "0.0.1",
+  "icons": {
+    "128": "img/logo/padlock.x128.png" //http://www.flaticon.com/free-icon/padlock_181534
+  },
+  "background": {
+    "scripts": [
+      "js/BackEnd/lib/openpgp.min.js",
+      "js/dist/BackEnd.min.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://*.facebook.com/messages/*"
+    ]
+  },
+  "permissions": [
+    "webRequest","webRequestBlocking",
+    "*://*.messenger.com/*",
+    "*://*.facebook.com/messages/*",
+    "notifications",
+    "tabs",
+    "cookies",
+    "activeTab",
+    "webNavigation",
+    "pageCapture"
+  ]
+}
